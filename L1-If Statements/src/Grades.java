@@ -13,16 +13,22 @@ public class Grades {
             grade = "F";
         }
 
-        if(percentage >= 60){
-            grade = "D";
+        if(percentage >= 60) {
+            if (percentage < 70) {
+                grade = "D";
+            }
         }
 
-        if(percentage >= 70){
-            grade = "C";
+        if(percentage >= 70) {
+            if (percentage < 80) {
+                grade = "C";
+            }
         }
 
-        if(percentage >= 80){
-            grade = "B";
+        if(percentage >= 80) {
+            if (percentage < 90) {
+                grade = "B";
+            }
         }
 
         if(percentage >= 90){
